@@ -3,12 +3,6 @@ import { Trophy, Zap, Lock, MessageSquare } from "lucide-react"
 export function WhyChooseSection() {
   const features = [
     {
-      icon: Trophy,
-      title: "Proven Track Record",
-      description:
-        "100+ successful projects delivered across various industries and technologies",
-    },
-    {
       icon: Zap,
       title: "Rapid Delivery",
       description: "Agile sprints and efficient processes ensure fast time-to-market",
@@ -46,12 +40,12 @@ export function WhyChooseSection() {
             Your Trusted Technology Partner
           </h2>
           <p className="text-lg text-primary-foreground/80">
-            We don't just build software—we build lasting partnerships based on trust, transparency, and results.
+            We don't just build software—we build lasting partnerships based on trust and results.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-3 gap-8">
           {features.map((feature) => (
             <div
               key={feature.title}

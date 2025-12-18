@@ -1,6 +1,7 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Globe, Rocket, ArrowRight } from "lucide-react"
+import { Rocket, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -26,7 +27,10 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl">
-              Transform your business with Swiss-precision technology. We deliver cutting-edge web development, cloud solutions, and digital transformation services to clients worldwide.
+              We deliver cutting-edge web development, cloud solution 
+              and digital transformation services to clients worldwide.
+              Our expertise in the financial and industrial sector enables
+              us to elevate your business to the next level.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -48,75 +52,17 @@ export function HeroSection() {
           {/* Hero Visual */}
           <div className="relative animate-in fade-in slide-in-from-right-4 duration-1000 delay-300">
             <div className="relative aspect-square max-w-lg mx-auto">
-              {/* Animated Gradient Card */}
-              <div className="absolute inset-0 bg-linear-to-br from-secondary via-accent to-secondary/50 rounded-3xl blur-2xl opacity-30 animate-pulse" />
-              <div className="relative bg-linear-to-br from-secondary to-accent rounded-3xl p-8 shadow-2xl">
-                <svg
-                  viewBox="0 0 400 300"
-                  className="w-full h-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Browser Window */}
-                  <rect
-                    x="50"
-                    y="50"
-                    width="300"
-                    height="200"
-                    rx="10"
-                    fill="rgba(255,255,255,0.1)"
-                    stroke="rgba(255,255,255,0.3)"
-                    strokeWidth="2"
-                  />
-                  {/* Browser Dots */}
-                  <circle cx="70" cy="70" r="4" fill="rgba(255,255,255,0.5)" />
-                  <circle cx="85" cy="70" r="4" fill="rgba(255,255,255,0.5)" />
-                  <circle cx="100" cy="70" r="4" fill="rgba(255,255,255,0.5)" />
-                  {/* Content Lines */}
-                  <rect
-                    x="70"
-                    y="100"
-                    width="260"
-                    height="8"
-                    rx="4"
-                    fill="rgba(255,255,255,0.3)"
-                  />
-                  <rect
-                    x="70"
-                    y="130"
-                    width="200"
-                    height="8"
-                    rx="4"
-                    fill="rgba(255,255,255,0.3)"
-                  />
-                  <rect
-                    x="70"
-                    y="160"
-                    width="220"
-                    height="8"
-                    rx="4"
-                    fill="rgba(255,255,255,0.3)"
-                  />
-                  <rect
-                    x="70"
-                    y="190"
-                    width="180"
-                    height="8"
-                    rx="4"
-                    fill="rgba(255,255,255,0.3)"
-                  />
-                  {/* Floating Chart Line */}
-                  <path
-                    d="M150 20 L200 50 L250 30 L300 60"
-                    stroke="rgba(255,255,255,0.6)"
-                    strokeWidth="3"
-                    fill="none"
-                    className="animate-pulse"
-                  />
-                  <circle cx="150" cy="20" r="5" fill="rgba(255,255,255,0.8)" />
-                  <circle cx="200" cy="50" r="5" fill="rgba(255,255,255,0.8)" />
-                  <circle cx="250" cy="30" r="5" fill="rgba(255,255,255,0.8)" />
-                  <circle cx="300" cy="60" r="5" fill="rgba(255,255,255,0.8)" />
-                </svg>
+              {/* Animated Gradient Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary via-accent to-secondary/50 rounded-3xl blur-2xl opacity-30 animate-pulse" />
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/key tiles mountains image.png"
+                  alt="Mountain landscape representing our global reach and elevated solutions"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

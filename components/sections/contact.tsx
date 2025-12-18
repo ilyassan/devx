@@ -20,13 +20,13 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      details: ["contact@devx.com", "info@devx.com"],
+      details: ["contact@devx.ch"],
     },
-    {
-      icon: Phone,
-      title: "Phone",
-      details: ["+41 XX XXX XX XX", "Available 24/7"],
-    },
+    // {
+    //   icon: Phone,
+    //   title: "Phone",
+    //   details: ["+41 XX XXX XX XX", "Available 24/7"],
+    // },
     {
       icon: MapPin,
       title: "Location",

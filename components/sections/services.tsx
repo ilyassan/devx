@@ -1,37 +1,41 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, Smartphone, Cloud, Rocket, Palette, Shield } from "lucide-react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Code, Cloud, Shield, Brain } from "lucide-react"
 
 export function ServicesSection() {
   const services = [
     {
       icon: Code,
-      title: "Web Development",
+      title: "Software Development",
       description:
-        "Custom websites and web applications built with modern frameworks. Responsive, fast, and user-friendly experiences that drive results.",
+        "Custom web, mobile, and desktop applications built with modern technologies. Scalable, secure, and tailored solutions designed to support your business growth.",
       features: [
-        "Custom Web Applications",
-        "E-commerce Solutions",
-        "Progressive Web Apps",
-        "CMS Development",
+        "Web Applications",
+        "Mobile Applications",
+        "Desktop Applications",
       ],
     },
     {
-      icon: Smartphone,
-      title: "Mobile Development",
+      icon: Brain,
+      title: "AI & Automation",
       description:
-        "Native and cross-platform mobile applications for iOS and Android. Seamless user experiences that engage your audience.",
+        "AI-powered solutions that automate repetitive tasks, streamline operations, and help your business work faster and smarter with minimal manual effort.",
       features: [
-        "iOS & Android Apps",
-        "Cross-Platform Solutions",
-        "Mobile-First Design",
-        "App Maintenance",
+        "Business Process Automation",
+        "Intelligent Chatbots & Assistants",
+        "Data Analysis & Insights",
       ],
     },
     {
       icon: Cloud,
       title: "Cloud Solutions",
       description:
-        "Scalable cloud infrastructure and migration services. Optimize performance, reduce costs, and ensure reliability.",
+        "Scalable and reliable cloud infrastructure services to enhance performance, improve security, and reduce operational costs.",
       features: [
         "Cloud Migration",
         "Infrastructure Setup",
@@ -40,29 +44,10 @@ export function ServicesSection() {
       ],
     },
     {
-      icon: Rocket,
-      title: "Digital Transformation",
-      description:
-        "Strategic consulting to modernize your business processes and technology stack for the digital age.",
-      features: [
-        "Technology Strategy",
-        "Process Automation",
-        "Legacy Modernization",
-        "Digital Innovation",
-      ],
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Design",
-      description:
-        "Beautiful, intuitive interfaces that delight users. Data-driven design decisions that improve conversion and engagement.",
-      features: ["User Research", "Interface Design", "Prototyping", "Usability Testing"],
-    },
-    {
       icon: Shield,
       title: "Maintenance & Support",
       description:
-        "24/7 technical support and maintenance services. Keep your systems running smoothly with proactive monitoring.",
+        "Ongoing maintenance and proactive support to ensure system stability, security, and peak performance around the clock.",
       features: [
         "24/7 Support",
         "Performance Monitoring",
@@ -83,23 +68,21 @@ export function ServicesSection() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Comprehensive IT Solutions
+            Software Engineering and IT Consulting
           </h2>
-          <p className="text-lg text-muted-foreground">
-            From concept to deployment, we provide end-to-end technology solutions tailored to your business needs.
-          </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+        <div className="grid md:grid-cols-2 gap-8">
+          {services.map((service) => (
             <Card
               key={service.title}
               className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-secondary/50 overflow-hidden"
             >
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:bg-gradient-to-br group-hover:from-secondary group-hover:to-accent">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:from-secondary group-hover:to-accent">
                   <service.icon className="w-7 h-7 text-secondary group-hover:text-white transition-colors duration-300" />
                 </div>
                 <CardTitle>{service.title}</CardTitle>
@@ -107,10 +90,14 @@ export function ServicesSection() {
                   {service.description}
                 </CardDescription>
               </CardHeader>
+
               <CardContent>
                 <ul className="space-y-2">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-muted-foreground">
+                    <li
+                      key={feature}
+                      className="flex items-center text-sm text-muted-foreground"
+                    >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mr-3" />
                       {feature}
                     </li>

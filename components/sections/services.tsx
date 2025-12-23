@@ -37,10 +37,9 @@ export function ServicesSection() {
       description:
         "Scalable and reliable cloud infrastructure services to enhance performance, improve security, and reduce operational costs.",
       features: [
-        "Cloud Migration",
+        "Cloud Migration / Optimization",
         "Infrastructure Setup",
         "DevOps & CI/CD",
-        "Cloud Optimization",
       ],
     },
     {
@@ -51,8 +50,7 @@ export function ServicesSection() {
       features: [
         "24/7 Support",
         "Performance Monitoring",
-        "Security Updates",
-        "Bug Fixes",
+        "Security Updates / Bug Fixes",
       ],
     },
   ]
@@ -68,7 +66,7 @@ export function ServicesSection() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Software Engineering and IT Consulting
+            Software Development and IT Consulting
           </h2>
         </div>
 

@@ -15,6 +15,8 @@ export function ContactSection() {
     subject: "",
     message: "",
   })
+  const [loading, setLoading] = useState(false)
+  const [result, setResult] = useState("")
 
   const contactInfo = [
     {
@@ -39,12 +41,35 @@ export function ContactSection() {
     },
   ]
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message! We'll get back to you soon.")
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setLoading(true)
+    setResult("")
+
+    const form = e.currentTarget
+    const formDataObj = new FormData(form)
+    formDataObj.append("access_key", "b1c6fdf8-f92a-44b3-bb17-bb78983a3aa1")
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataObj,
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setResult("Thank you for your message! We'll get back to you soon.")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        setResult("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      setResult("Failed to send message. Please try again.")
+      console.error("Form submission error:", error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (
@@ -153,10 +178,25 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90" size="lg">
+              <Button
+                type="submit"
+                className="w-full bg-secondary hover:bg-secondary/90"
+                size="lg"
+                disabled={loading}
+              >
                 <Send className="w-5 h-5 mr-2" />
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </Button>
+
+              {result && (
+                <div className={`p-4 rounded-lg text-sm ${
+                  result.includes("Thank you")
+                    ? "bg-green-50 text-green-800 border border-green-200"
+                    : "bg-red-50 text-red-800 border border-red-200"
+                }`}>
+                  {result}
+                </div>
+              )}
             </form>
           </Card>
         </div>

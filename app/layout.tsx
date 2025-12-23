@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     images: ["https://www.devx.ch/icon.png"],
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "67npQe_3wOxDohlRGBcKBO0YaFfYF3M23nz9uL5PUo0",
   },
   alternates: {
     canonical: "https://www.devx.ch",

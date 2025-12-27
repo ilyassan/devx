@@ -6,51 +6,50 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Code, Cloud, Shield, Brain } from "lucide-react"
+import { getTranslations } from 'next-intl/server'
 
-export function ServicesSection() {
+export async function ServicesSection() {
+  const t = await getTranslations('Services')
+
   const services = [
     {
       icon: Code,
-      title: "Software Development",
-      description:
-        "Custom web, mobile, and desktop applications built with modern technologies. Scalable, secure, and tailored solutions designed to support your business growth.",
+      title: t('items.softwareDevelopment.title'),
+      description: t('items.softwareDevelopment.description'),
       features: [
-        "Web Applications",
-        "Mobile Applications",
-        "Desktop Applications",
+        t('items.softwareDevelopment.features.webApplications'),
+        t('items.softwareDevelopment.features.mobileApplications'),
+        t('items.softwareDevelopment.features.desktopApplications'),
       ],
     },
     {
       icon: Brain,
-      title: "AI & Automation",
-      description:
-        "AI-powered solutions that automate repetitive tasks, streamline operations, and help your business work faster and smarter with minimal manual effort.",
+      title: t('items.aiAutomation.title'),
+      description: t('items.aiAutomation.description'),
       features: [
-        "Business Process Automation",
-        "Intelligent Chatbots & Assistants",
-        "Data Analysis & Insights",
+        t('items.aiAutomation.features.processAutomation'),
+        t('items.aiAutomation.features.chatbots'),
+        t('items.aiAutomation.features.dataAnalysis'),
       ],
     },
     {
       icon: Cloud,
-      title: "Cloud Solutions",
-      description:
-        "Scalable and reliable cloud infrastructure services to enhance performance, improve security, and reduce operational costs.",
+      title: t('items.cloudSolutions.title'),
+      description: t('items.cloudSolutions.description'),
       features: [
-        "Cloud Migration / Optimization",
-        "Infrastructure Setup",
-        "DevOps & CI/CD",
+        t('items.cloudSolutions.features.cloudMigration'),
+        t('items.cloudSolutions.features.infrastructureSetup'),
+        t('items.cloudSolutions.features.devOps'),
       ],
     },
     {
       icon: Shield,
-      title: "Maintenance & Support",
-      description:
-        "Ongoing maintenance and proactive support to ensure system stability, security, and peak performance around the clock.",
+      title: t('items.maintenanceSupport.title'),
+      description: t('items.maintenanceSupport.description'),
       features: [
-        "24/7 Support",
-        "Performance Monitoring",
-        "Security Updates / Bug Fixes",
+        t('items.maintenanceSupport.features.support247'),
+        t('items.maintenanceSupport.features.performanceMonitoring'),
+        t('items.maintenanceSupport.features.securityUpdates'),
       ],
     },
   ]
@@ -62,11 +61,11 @@ export function ServicesSection() {
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20">
             <span className="text-xs font-bold text-secondary uppercase tracking-wider">
-              What We Do
+              {t('badge')}
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Software Development and IT Consulting
+            {t('title')}
           </h2>
         </div>
 

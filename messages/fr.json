@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "DevX - Solutions IT Professionnelles | Développement Web & Transformation Digitale",
+      "description": "DevX offre des services de développement web, applications mobiles, solutions cloud et transformation digitale de classe mondiale à des clients du monde entier. Qualité exceptionnelle et innovation mondiale."
+    },
+    "contact": {
+      "title": "Nous Contacter",
+      "description": "Contactez DevX. Nous sommes là pour discuter de vos besoins de projet et fournir une consultation gratuite pour vos solutions IT et besoins de transformation digitale."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Découvrez les solutions et services IT complets de DevX. Développement web, applications mobiles, solutions cloud et transformation digitale adaptés aux besoins de votre entreprise."
+    }
+  },
+  "Navigation": {
+    "services": "Services",
+    "about": "À Propos",
+    "contact": "Contact",
+    "getStarted": "Commencer"
+  },
+  "Footer": {
+    "companyDescription": "Entreprise de solutions IT professionnelles offrant des services de développement web et de transformation digitale de classe mondiale aux clients du monde entier.",
+    "services": {
+      "title": "Services",
+      "webDevelopment": "Développement Web",
+      "mobileDevelopment": "Développement Mobile",
+      "cloudSolutions": "Solutions Cloud",
+      "digitalTransformation": "Transformation Digitale"
+    },
+    "company": {
+      "title": "Entreprise",
+      "contact": "Contact"
+    },
+    "copyright": "© 2025 DevX. Tous droits réservés."
+  },
+  "Hero": {
+    "title1": "Ingénierie de Solutions IT",
+    "title2": "Qui S'Adaptent à l'Échelle Mondiale",
+    "description": "Nous fournissons des services de développement web, de solutions cloud et de transformation digitale de pointe à des clients du monde entier. Notre expertise dans les secteurs financier et industriel nous permet d'élever votre entreprise au niveau supérieur.",
+    "startProject": "Démarrer Votre Projet",
+    "exploreServices": "Découvrir les Services",
+    "imageAlt": "Paysage de montagne représentant notre portée mondiale et nos solutions élevées"
+  },
+  "Services": {
+    "badge": "Ce Que Nous Faisons",
+    "title": "Développement Logiciel et Conseil IT",
+    "items": {
+      "softwareDevelopment": {
+        "title": "Développement Logiciel",
+        "description": "Applications web, mobiles et de bureau personnalisées construites avec des technologies modernes. Solutions évolutives, sécurisées et sur mesure conçues pour soutenir la croissance de votre entreprise.",
+        "features": {
+          "webApplications": "Applications Web",
+          "mobileApplications": "Applications Mobiles",
+          "desktopApplications": "Applications de Bureau"
+        }
+      },
+      "aiAutomation": {
+        "title": "IA & Automatisation",
+        "description": "Solutions basées sur l'IA qui automatisent les tâches répétitives, rationalisent les opérations et aident votre entreprise à travailler plus rapidement et plus intelligemment avec un minimum d'effort manuel.",
+        "features": {
+          "processAutomation": "Automatisation des Processus Métier",
+          "chatbots": "Chatbots et Assistants Intelligents",
+          "dataAnalysis": "Analyse de Données et Insights"
+        }
+      },
+      "cloudSolutions": {
+        "title": "Solutions Cloud",
+        "description": "Services d'infrastructure cloud évolutifs et fiables pour améliorer les performances, renforcer la sécurité et réduire les coûts opérationnels.",
+        "features": {
+          "cloudMigration": "Migration / Optimisation Cloud",
+          "infrastructureSetup": "Configuration d'Infrastructure",
+          "devOps": "DevOps & CI/CD"
+        }
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "Maintenance continue et support proactif pour assurer la stabilité du système, la sécurité et des performances optimales 24h/24 et 7j/7.",
+        "features": {
+          "support247": "Support 24/7",
+          "performanceMonitoring": "Surveillance des Performances",
+          "securityUpdates": "Mises à Jour de Sécurité / Corrections de Bugs"
+        }
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Contactez-Nous",
+    "title": "Démarrons Votre Projet",
+    "description": "Contactez-nous aujourd'hui pour discuter de vos besoins de projet et obtenir une consultation gratuite.",
+    "info": {
+      "email": {
+        "title": "Email"
+      },
+      "location": {
+        "title": "Localisation",
+        "country": "Suisse",
+        "global": "Au service de clients dans le monde entier"
+      },
+      "businessHours": {
+        "title": "Heures d'Ouverture",
+        "hours": "Lun - Ven : 9h00 - 18h00 CET",
+        "support": "Support 24/7 Disponible"
+      }
+    },
+    "form": {
+      "fullName": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.com",
+      "subjectPlaceholder": "Demande de Projet",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "sendButton": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "successMessage": "Merci pour votre message ! Nous vous répondrons bientôt.",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
+      "failedMessage": "Échec de l'envoi du message. Veuillez réessayer."
+    }
+  },
+  "WhyChoose": {
+    "badge": "Pourquoi Choisir DevX",
+    "title": "Votre Partenaire Technologique de Confiance",
+    "description": "Nous ne construisons pas seulement des logiciels—nous construisons des partenariats durables basés sur la confiance et les résultats.",
+    "features": {
+      "rapidDelivery": {
+        "title": "Livraison Rapide",
+        "description": "Des sprints agiles et des processus efficaces garantissent une mise sur le marché rapide"
+      },
+      "securityFirst": {
+        "title": "Sécurité Prioritaire",
+        "description": "Pratiques de sécurité de niveau entreprise protégeant vos données et vos utilisateurs"
+      },
+      "clearCommunication": {
+        "title": "Communication Claire",
+        "description": "Mises à jour régulières et collaboration transparente tout au long du projet"
+      }
+    }
+  }
+}

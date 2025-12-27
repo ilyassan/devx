@@ -1,10 +1,16 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/sections/contact"
+import {getTranslations} from 'next-intl/server';
 
-export const metadata = {
-  title: "Contact Us | DevX",
-  description: "Get in touch with DevX. We're here to discuss your project requirements and provide a free consultation for your IT solutions and digital transformation needs.",
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'Metadata.contact'});
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
 }
 
 export default function ContactPage() {

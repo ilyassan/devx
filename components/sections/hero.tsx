@@ -2,8 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Rocket, ArrowRight } from "lucide-react"
+import { getTranslations } from 'next-intl/server'
 
-export function HeroSection() {
+export async function HeroSection() {
+  const t = await getTranslations('Hero')
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Gradient Orbs */}
@@ -18,31 +20,28 @@ export function HeroSection() {
           <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Engineering IT Solutions
+                {t('title1')}
               </span>
               <br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                That Scale Globally
+                {t('title2')}
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl">
-              We deliver cutting-edge web development, cloud solution 
-              and digital transformation services to clients worldwide.
-              Our expertise in the financial and industrial sector enables
-              us to elevate your business to the next level.
+              {t('description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="text-base bg-secondary hover:bg-secondary/90">
                 <Link href="#contact">
                   <Rocket className="w-5 h-5 mr-2" />
-                  Start Your Project
+                  {t('startProject')}
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-base border-secondary text-secondary">
                 <Link href="#services">
-                  Explore Services
+                  {t('exploreServices')}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
@@ -57,7 +56,7 @@ export function HeroSection() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/key tiles mountains image.png"
-                  alt="Mountain landscape representing our global reach and elevated solutions"
+                  alt={t('imageAlt')}
                   width={600}
                   height={600}
                   className="w-full h-full object-cover"

@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "DevX - Professional IT Solutions | Web Development & Digital Transformation",
+      "description": "DevX delivers world-class web development, mobile apps, cloud solutions, and digital transformation services to clients worldwide. Exceptional quality meets global innovation."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with DevX. We're here to discuss your project requirements and provide a free consultation for your IT solutions and digital transformation needs."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Explore DevX's comprehensive IT solutions and services. Web development, mobile apps, cloud solutions, and digital transformation tailored to your business needs."
+    }
+  },
+  "Navigation": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "Footer": {
+    "companyDescription": "Professional IT solutions company delivering world-class web development and digital transformation services to clients worldwide.",
+    "services": {
+      "title": "Services",
+      "webDevelopment": "Web Development",
+      "mobileDevelopment": "Mobile Development",
+      "cloudSolutions": "Cloud Solutions",
+      "digitalTransformation": "Digital Transformation"
+    },
+    "company": {
+      "title": "Company",
+      "contact": "Contact"
+    },
+    "copyright": "© 2025 DevX. All rights reserved."
+  },
+  "Hero": {
+    "title1": "Engineering IT Solutions",
+    "title2": "That Scale Globally",
+    "description": "We deliver cutting-edge web development, cloud solution and digital transformation services to clients worldwide. Our expertise in the financial and industrial sector enables us to elevate your business to the next level.",
+    "startProject": "Start Your Project",
+    "exploreServices": "Explore Services",
+    "imageAlt": "Mountain landscape representing our global reach and elevated solutions"
+  },
+  "Services": {
+    "badge": "What We Do",
+    "title": "Software Development and IT Consulting",
+    "items": {
+      "softwareDevelopment": {
+        "title": "Software Development",
+        "description": "Custom web, mobile, and desktop applications built with modern technologies. Scalable, secure, and tailored solutions designed to support your business growth.",
+        "features": {
+          "webApplications": "Web Applications",
+          "mobileApplications": "Mobile Applications",
+          "desktopApplications": "Desktop Applications"
+        }
+      },
+      "aiAutomation": {
+        "title": "AI & Automation",
+        "description": "AI-powered solutions that automate repetitive tasks, streamline operations, and help your business work faster and smarter with minimal manual effort.",
+        "features": {
+          "processAutomation": "Business Process Automation",
+          "chatbots": "Intelligent Chatbots & Assistants",
+          "dataAnalysis": "Data Analysis & Insights"
+        }
+      },
+      "cloudSolutions": {
+        "title": "Cloud Solutions",
+        "description": "Scalable and reliable cloud infrastructure services to enhance performance, improve security, and reduce operational costs.",
+        "features": {
+          "cloudMigration": "Cloud Migration / Optimization",
+          "infrastructureSetup": "Infrastructure Setup",
+          "devOps": "DevOps & CI/CD"
+        }
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "Ongoing maintenance and proactive support to ensure system stability, security, and peak performance around the clock.",
+        "features": {
+          "support247": "24/7 Support",
+          "performanceMonitoring": "Performance Monitoring",
+          "securityUpdates": "Security Updates / Bug Fixes"
+        }
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Get In Touch",
+    "title": "Let's Start Your Project",
+    "description": "Contact us today to discuss your project requirements and get a free consultation.",
+    "info": {
+      "email": {
+        "title": "Email"
+      },
+      "location": {
+        "title": "Location",
+        "country": "Switzerland",
+        "global": "Serving clients globally"
+      },
+      "businessHours": {
+        "title": "Business Hours",
+        "hours": "Mon - Fri: 9:00 AM - 6:00 PM CET",
+        "support": "24/7 Support Available"
+      }
+    },
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "subjectPlaceholder": "Project Inquiry",
+      "messagePlaceholder": "Tell us about your project...",
+      "sendButton": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Thank you for your message! We'll get back to you soon.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "failedMessage": "Failed to send message. Please try again."
+    }
+  },
+  "WhyChoose": {
+    "badge": "Why Choose DevX",
+    "title": "Your Trusted Technology Partner",
+    "description": "We don't just build software—we build lasting partnerships based on trust and results.",
+    "features": {
+      "rapidDelivery": {
+        "title": "Rapid Delivery",
+        "description": "Agile sprints and efficient processes ensure fast time-to-market"
+      },
+      "securityFirst": {
+        "title": "Security First",
+        "description": "Enterprise-grade security practices protecting your data and users"
+      },
+      "clearCommunication": {
+        "title": "Clear Communication",
+        "description": "Regular updates and transparent collaboration throughout the project"
+      }
+    }
+  }
+}

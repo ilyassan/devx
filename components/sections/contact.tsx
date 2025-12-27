@@ -7,8 +7,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 export function ContactSection() {
+  const t = useTranslations('Contact')
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,23 +23,18 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email",
+      title: t('info.email.title'),
       details: ["contact@devx.ch"],
     },
-    // {
-    //   icon: Phone,
-    //   title: "Phone",
-    //   details: ["+41 XX XXX XX XX", "Available 24/7"],
-    // },
     {
       icon: MapPin,
-      title: "Location",
-      details: ["Switzerland", "Serving clients globally"],
+      title: t('info.location.title'),
+      details: [t('info.location.country'), t('info.location.global')],
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      details: ["Mon - Fri: 9:00 AM - 6:00 PM CET", "24/7 Support Available"],
+      title: t('info.businessHours.title'),
+      details: [t('info.businessHours.hours'), t('info.businessHours.support')],
     },
   ]
 
@@ -59,13 +56,13 @@ export function ContactSection() {
       const data = await response.json()
 
       if (data.success) {
-        setResult("Thank you for your message! We'll get back to you soon.")
+        setResult(t('form.successMessage'))
         setFormData({ name: "", email: "", subject: "", message: "" })
       } else {
-        setResult("Something went wrong. Please try again.")
+        setResult(t('form.errorMessage'))
       }
     } catch (error) {
-      setResult("Failed to send message. Please try again.")
+      setResult(t('form.failedMessage'))
       console.error("Form submission error:", error)
     } finally {
       setLoading(false)
@@ -88,14 +85,14 @@ export function ContactSection() {
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20">
             <span className="text-xs font-bold text-secondary uppercase tracking-wider">
-              Get In Touch
+              {t('badge')}
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Let's Start Your Project
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Contact us today to discuss your project requirements and get a free consultation.
+            {t('description')}
           </p>
         </div>
 
@@ -129,11 +126,11 @@ export function ContactSection() {
           <Card className="p-6 lg:p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="name">Full Name *</Label>
+                <Label htmlFor="name">{t('form.fullName')} *</Label>
                 <Input
                   id="name"
                   name="name"
-                  placeholder="John Doe"
+                  placeholder={t('form.namePlaceholder')}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -141,12 +138,12 @@ export function ContactSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email">Email Address *</Label>
+                <Label htmlFor="email">{t('form.email')} *</Label>
                 <Input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder={t('form.emailPlaceholder')}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -154,11 +151,11 @@ export function ContactSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="subject">Subject *</Label>
+                <Label htmlFor="subject">{t('form.subject')} *</Label>
                 <Input
                   id="subject"
                   name="subject"
-                  placeholder="Project Inquiry"
+                  placeholder={t('form.subjectPlaceholder')}
                   value={formData.subject}
                   onChange={handleChange}
                   required
@@ -166,11 +163,11 @@ export function ContactSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message *</Label>
+                <Label htmlFor="message">{t('form.message')} *</Label>
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="Tell us about your project..."
+                  placeholder={t('form.messagePlaceholder')}
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
@@ -185,12 +182,12 @@ export function ContactSection() {
                 disabled={loading}
               >
                 <Send className="w-5 h-5 mr-2" />
-                {loading ? "Sending..." : "Send Message"}
+                {loading ? t('form.sending') : t('form.sendButton')}
               </Button>
 
               {result && (
                 <div className={`p-4 rounded-lg text-sm ${
-                  result.includes("Thank you")
+                  result.includes(t('form.successMessage').substring(0, 10))
                     ? "bg-green-50 text-green-800 border border-green-200"
                     : "bg-red-50 text-red-800 border border-red-200"
                 }`}>

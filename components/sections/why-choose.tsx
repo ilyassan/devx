@@ -1,21 +1,24 @@
 import { Trophy, Zap, Lock, MessageSquare } from "lucide-react"
+import { getTranslations } from 'next-intl/server'
 
-export function WhyChooseSection() {
+export async function WhyChooseSection() {
+  const t = await getTranslations('WhyChoose')
+
   const features = [
     {
       icon: Zap,
-      title: "Rapid Delivery",
-      description: "Agile sprints and efficient processes ensure fast time-to-market",
+      title: t('features.rapidDelivery.title'),
+      description: t('features.rapidDelivery.description'),
     },
     {
       icon: Lock,
-      title: "Security First",
-      description: "Enterprise-grade security practices protecting your data and users",
+      title: t('features.securityFirst.title'),
+      description: t('features.securityFirst.description'),
     },
     {
       icon: MessageSquare,
-      title: "Clear Communication",
-      description: "Regular updates and transparent collaboration throughout the project",
+      title: t('features.clearCommunication.title'),
+      description: t('features.clearCommunication.description'),
     },
   ]
 
@@ -33,14 +36,14 @@ export function WhyChooseSection() {
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20">
             <span className="text-xs font-bold uppercase tracking-wider">
-              Why Choose DevX
+              {t('badge')}
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Your Trusted Technology Partner
+            {t('title')}
           </h2>
           <p className="text-lg text-primary-foreground/80">
-            We don't just build software—we build lasting partnerships based on trust and results.
+            {t('description')}
           </p>
         </div>
 

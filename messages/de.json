@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "DevX - Professionelle IT-Lösungen | Webentwicklung & Digitale Transformation",
+      "description": "DevX liefert erstklassige Webentwicklung, Mobile Apps, Cloud-Lösungen und digitale Transformationsdienste an Kunden weltweit. Außergewöhnliche Qualität trifft auf globale Innovation."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Nehmen Sie Kontakt mit DevX auf. Wir besprechen gerne Ihre Projektanforderungen und bieten eine kostenlose Beratung für Ihre IT-Lösungen und digitalen Transformationsbedürfnisse."
+    },
+    "services": {
+      "title": "Dienstleistungen",
+      "description": "Entdecken Sie die umfassenden IT-Lösungen und Dienstleistungen von DevX. Webentwicklung, Mobile Apps, Cloud-Lösungen und digitale Transformation, maßgeschneidert für Ihre Geschäftsanforderungen."
+    }
+  },
+  "Navigation": {
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "getStarted": "Starten"
+  },
+  "Footer": {
+    "companyDescription": "Professionelles IT-Lösungsunternehmen, das erstklassige Webentwicklung und digitale Transformationsdienste an Kunden weltweit liefert.",
+    "services": {
+      "title": "Dienstleistungen",
+      "webDevelopment": "Webentwicklung",
+      "mobileDevelopment": "Mobile Entwicklung",
+      "cloudSolutions": "Cloud-Lösungen",
+      "digitalTransformation": "Digitale Transformation"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2025 DevX. Alle Rechte vorbehalten."
+  },
+  "Hero": {
+    "title1": "IT-Lösungen entwickeln",
+    "title2": "die global skalieren",
+    "description": "Wir liefern modernste Webentwicklung, Cloud-Lösungen und digitale Transformationsdienste an Kunden weltweit. Unsere Expertise im Finanz- und Industriesektor ermöglicht es uns, Ihr Unternehmen auf die nächste Stufe zu heben.",
+    "startProject": "Projekt starten",
+    "exploreServices": "Dienstleistungen erkunden",
+    "imageAlt": "Berglandschaft, die unsere globale Reichweite und gehobenen Lösungen repräsentiert"
+  },
+  "Services": {
+    "badge": "Was wir tun",
+    "title": "Softwareentwicklung und IT-Beratung",
+    "items": {
+      "softwareDevelopment": {
+        "title": "Softwareentwicklung",
+        "description": "Maßgeschneiderte Web-, Mobile- und Desktop-Anwendungen, die mit modernen Technologien entwickelt wurden. Skalierbare, sichere und maßgeschneiderte Lösungen, die das Wachstum Ihres Unternehmens unterstützen.",
+        "features": {
+          "webApplications": "Webanwendungen",
+          "mobileApplications": "Mobile Anwendungen",
+          "desktopApplications": "Desktop-Anwendungen"
+        }
+      },
+      "aiAutomation": {
+        "title": "KI & Automatisierung",
+        "description": "KI-gestützte Lösungen, die sich wiederholende Aufgaben automatisieren, Abläufe rationalisieren und Ihrem Unternehmen helfen, schneller und intelligenter mit minimalem manuellen Aufwand zu arbeiten.",
+        "features": {
+          "processAutomation": "Geschäftsprozessautomatisierung",
+          "chatbots": "Intelligente Chatbots & Assistenten",
+          "dataAnalysis": "Datenanalyse & Erkenntnisse"
+        }
+      },
+      "cloudSolutions": {
+        "title": "Cloud-Lösungen",
+        "description": "Skalierbare und zuverlässige Cloud-Infrastrukturdienste zur Verbesserung der Leistung, Erhöhung der Sicherheit und Reduzierung der Betriebskosten.",
+        "features": {
+          "cloudMigration": "Cloud-Migration / Optimierung",
+          "infrastructureSetup": "Infrastruktur-Setup",
+          "devOps": "DevOps & CI/CD"
+        }
+      },
+      "maintenanceSupport": {
+        "title": "Wartung & Support",
+        "description": "Kontinuierliche Wartung und proaktiver Support, um Systemstabilität, Sicherheit und Spitzenleistung rund um die Uhr zu gewährleisten.",
+        "features": {
+          "support247": "24/7 Support",
+          "performanceMonitoring": "Leistungsüberwachung",
+          "securityUpdates": "Sicherheitsupdates / Fehlerbehebungen"
+        }
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Kontakt aufnehmen",
+    "title": "Lassen Sie uns Ihr Projekt starten",
+    "description": "Kontaktieren Sie uns noch heute, um Ihre Projektanforderungen zu besprechen und eine kostenlose Beratung zu erhalten.",
+    "info": {
+      "email": {
+        "title": "E-Mail"
+      },
+      "location": {
+        "title": "Standort",
+        "country": "Schweiz",
+        "global": "Kunden weltweit"
+      },
+      "businessHours": {
+        "title": "Geschäftszeiten",
+        "hours": "Mo - Fr: 9:00 - 18:00 Uhr MEZ",
+        "support": "24/7 Support verfügbar"
+      }
+    },
+    "form": {
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "namePlaceholder": "Max Mustermann",
+      "emailPlaceholder": "max@beispiel.com",
+      "subjectPlaceholder": "Projektanfrage",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "sendButton": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+      "failedMessage": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    }
+  },
+  "WhyChoose": {
+    "badge": "Warum DevX wählen",
+    "title": "Ihr vertrauenswürdiger Technologiepartner",
+    "description": "Wir entwickeln nicht nur Software – wir bauen dauerhafte Partnerschaften auf, die auf Vertrauen und Ergebnissen basieren.",
+    "features": {
+      "rapidDelivery": {
+        "title": "Schnelle Lieferung",
+        "description": "Agile Sprints und effiziente Prozesse sorgen für eine schnelle Markteinführung"
+      },
+      "securityFirst": {
+        "title": "Sicherheit zuerst",
+        "description": "Sicherheitspraktiken auf Unternehmensniveau schützen Ihre Daten und Benutzer"
+      },
+      "clearCommunication": {
+        "title": "Klare Kommunikation",
+        "description": "Regelmäßige Updates und transparente Zusammenarbeit während des gesamten Projekts"
+      }
+    }
+  }
+}

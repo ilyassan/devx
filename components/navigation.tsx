@@ -4,8 +4,10 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { useTranslations } from 'next-intl'
 
 export function Navigation() {
+  const t = useTranslations('Navigation')
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -18,9 +20,9 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" },
+    { href: "#services", label: t('services') },
+    { href: "#about", label: t('about') },
+    { href: "#contact", label: t('contact') },
   ]
 
   return (
@@ -51,7 +53,7 @@ export function Navigation() {
               </Link>
             ))}
             <Button asChild className="bg-secondary hover:bg-secondary/90">
-              <Link href="#contact">Get Started</Link>
+              <Link href="#contact">{t('getStarted')}</Link>
             </Button>
           </div>
 
@@ -84,7 +86,7 @@ export function Navigation() {
             ))}
             <Button asChild className="w-full">
               <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-                Get Started
+                {t('getStarted')}
               </Link>
             </Button>
           </div>
